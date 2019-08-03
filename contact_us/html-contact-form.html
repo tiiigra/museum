@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+
+<!-- Mirrored from vikz.org.ua/contact_us/html-contact-form.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jul 2019 20:29:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=windows-1251" /><!-- /Added by HTTrack -->
+<head>
+	<title>Contact Us</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+	<style>
+		body { margin:0px;}
+		label,a, body  { color:gray;	font-family : Arial, Helvetica, sans-serif; 	font-size : 14px;  }
+		.err {	font-family : Verdana, Helvetica, sans-serif;	font-size : 12px;	color: red; }
+
+		.inp1 {color:#444444;  background:transparent; border:0px; border-bottom:2px solid gray; height:30px; width:90%;	font-size:18px;}
+		.inp2 {background-color:#6ebce7; height:80px; width:400px; color:white; 	font-size : 16px; border:0px;}
+
+		.but_border {transition: 0.3s linear; background-color:transparent; color:#d21818; border:2px solid #d21818; cursor:pointer; padding:6px; font-weight:bold; font-size:12px;}
+		.but_border:hover {background-color:#d21818; color:#ffffff; border:2px solid #d21818; }
+
+		.f_left {float:left;}
+		.f_rigjht {float:right;}
+		.w50p {width:50%;}
+		.clear {clear:both;}
+		.border1 {border:1px solid red;}
+		.white-t {color:white;}
+
+	</style>	
+	<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>	
+	<!-- link rel="stylesheet" type="text/css" href="/templates/__style.css" -->
+</head>
+
+
+<body>
+
+<div id='contact_form_errorloc' class='err'></div>
+
+
+
+<form method="POST" name="contact_form" 
+action="https://vikz.org.ua/contact_us/html-contact-form.php"> 
+
+
+
+
+	<p><label for='name'>Ім'я </label><br><input class="inp1" type="text" name="name" value=''></p>
+	<p><label for='name'>Телефон або email </label><br><input class="inp1" type="text" name="tel" value=''></p>
+
+
+	<!-- p><label for='name'>Фамилия*: </label><br><input class="inp1" type="text" name="name2" value=''></p -->
+	<!-- p><label for='email'>Email*: </label><br><input class="inp1" type="text" name="email" value='' -->
+</div>
+<div class="clear"></div>
+
+
+</p>
+<p>
+<label for='message'>Бажана дата, кількість осіб, коментарі:</label> <br>
+<input class="inp1" name="company" style="width:95%;"><br><br>
+
+<!-- input type=checkbox name="mrules" checked> Я соглашаюсь с правилами использования системы -->
+</p>
+
+<!-- p>
+	<img src="captcha_code_file.php?rand=1415357266" id='captchaimg' align=absmiddle>
+	<a href='javascript: refreshCaptcha();'><small>обновить код</small></a>
+	<br>
+	<label for='message'>Введите проверочный код :</label><br>
+	<input id="6_letters_code" name="6_letters_code" type="text">
+</p -->
+
+	<br>
+	<input type="submit" value=" ЗАМОВИТИ " class="but_border" name='submit'>
+
+
+
+
+</form>
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contact_form");
+//remove the following two lines if you like error message box popups
+frmvalidator.EnableOnPageErrorDisplaySingleBox();
+frmvalidator.EnableMsgsTogether();
+
+frmvalidator.addValidation("name","req","Пожалуйста введите Имя"); 
+frmvalidator.addValidation("name2","req","Пожалуйста введите Фамилию"); 
+frmvalidator.addValidation("tel","req","Пожалуйста введите Телефон"); 
+// frmvalidator.addValidation("email","req","Пожалуйста введите Email"); 
+// frmvalidator.addValidation("email","email","Пожалуйста введите корректный email"); 
+frmvalidator.addValidation("mrules","req","Прежде чем продолжить, необходимо принять условия пользовательского соглашения"); 
+</script>
+<script language='JavaScript' type='text/javascript'>
+function refreshCaptcha()
+{
+	var img = document.images['captchaimg'];
+	img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
+}
+</script>
+</body>
+
+<!-- Mirrored from vikz.org.ua/contact_us/html-contact-form.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jul 2019 20:29:11 GMT -->
+</html>
