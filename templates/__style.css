@@ -2,6 +2,10 @@
 
 #fixed {width:200px;position:absolute;}
 
+.bx-prev, .bx-next {
+	display: none; !important;
+}
+
 
 body {margin:0px; background-color:#f7f3e6;}
 body,td,p {font-family: 'PT Sans', Verdana,Arial;  font-size:18px; color:#555555; line-height:1.5;}
@@ -687,6 +691,8 @@ a.footer:hover {COLOR:#dc0e1c;}
 
 	.photo_detail1_item {width:300px;}
 }
+
+
 
 
 
