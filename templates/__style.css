@@ -1,8 +1,8 @@
 /* vikz */
 
 .photo_detail1_item {
-	max-height: 300px;
-	width: 100%;
+	width: calc(100% - 20px) !important;
+	margin: 10px 5px !important;
 }
 
 .photo_detail1_item img {
@@ -28,7 +28,7 @@
 
 
 body {margin:0px; background-color:#f7f3e6;}
-body,td,p {font-family: 'PT Sans', Verdana,Arial;  font-size:18px; color:#555555; line-height:1.5;}
+body,td,p {font-family: 'PT Sans', Verdana,Arial;  font-size:18px; color:#555555; line-height:1.5; padding-top: 25px;}
 
 
 h1 {color:#9e0000; font-family: 'Alice', serif; font-size:32px; font-weight:normal; margin:0px;  line-height:1.2; }
