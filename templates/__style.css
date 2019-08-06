@@ -1,8 +1,18 @@
 /* vikz */
 
+
+
+.title_h1 {
+	padding-top: 20px;
+}
+
+.info {
+	padding: 0 10px;
+}
+
 .photo_detail1_item {
-	width: calc(100% - 20px) !important;
-	margin: 10px 5px !important;
+	width: 100% !important;
+	margin-left: 0 !important;
 }
 
 .photo_detail1_item img {
