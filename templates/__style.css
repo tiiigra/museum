@@ -13,7 +13,7 @@
 #fixed {width:200px;position:absolute;}
 
 .bx-prev, .bx-next {
-	display: none; !important;
+	display: block !important;
 }
 
 .photo_detail1_item {
